@@ -93,7 +93,7 @@ var workHours = JSON.parse(localStorage.getItem('schedule'));
 }
   
 function updateCalendar(dayObject) {
-    $("#calendar").each(function(index) {
+    $(".calendar").each(function(index) {
       var res = $(this).children("div");
       $(this).children("textarea").text(dayObject[res.text()]);
     })
